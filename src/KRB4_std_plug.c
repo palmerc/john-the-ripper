@@ -29,7 +29,7 @@
 #include "KRB4_std.h"
 
 #ifndef des_fixup_key_parity
-#define des_fixup_key_parity	des_set_odd_parity
+#define des_fixup_key_parity	DES_set_odd_parity
 #endif
 
 static void

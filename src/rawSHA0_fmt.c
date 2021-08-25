@@ -103,9 +103,9 @@ static int cmp_one(void * binary, int index)
 
 static void crypt_all(int count)
 {
-	SHA_Init( &ctx );
-	SHA_Update( &ctx, (unsigned char *) saved_key, strlen( saved_key ) );
-	SHA_Final( (unsigned char *) crypt_key, &ctx);
+	SHA1_Init( &ctx );
+	SHA1_Update( &ctx, (unsigned char *) saved_key, strlen( saved_key ) );
+	SHA1_Final( (unsigned char *) crypt_key, &ctx);
 }
 
 static void *binary(char *ciphertext)
